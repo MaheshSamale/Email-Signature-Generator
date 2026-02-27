@@ -3,7 +3,7 @@ import { icon, socialIcons, internetSVG, phoneSVG, locationSVG } from "./icons";
 export default function Template37(data) {
   return `
 
-<table cellpadding="0" cellspacing="0" style="font-family:Helvetica, sans-serif;font-size:14px;color:#333;">
+<table cellpadding="0" cellspacing="0" style="font-family:Verdana, sans-serif;font-size:14px;color:#333;">
   <tr>
     <td style="padding-right:15px;text-align:right;">
       <div style="font-size:18px;font-weight:bold;color:#14B8A6;">${data.name}</div>

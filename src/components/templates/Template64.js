@@ -1,14 +1,19 @@
 import { icon, socialIcons, internetSVG, phoneSVG, locationSVG } from "./icons";
 
-export default function Template44(data) {
+export default function Template64(data) {
   return `
 
-<table cellpadding="0" cellspacing="0" style="font-family:Helvetica, sans-serif;font-size:14px;color:#333;">
+<table cellpadding="0" cellspacing="0" style="font-family:Tahoma, sans-serif;font-size:14px;color:#333;text-align:center;">
   <tr>
-    <td style="padding-right:15px;text-align:right;">
+    <td style="padding-bottom:15px;border-bottom:2px dashed #3B82F6;">
+      ${data.photo ? `<img src="${data.photo}" width="80" style="border-radius:50%;display:block;margin:0 auto 10px;"/>` : ""}
       <div style="font-size:18px;font-weight:bold;color:#3B82F6;">${data.name}</div>
-      <div style="font-size:14px;margin-bottom:8px;">${data.title} ${data.company ? `<br/>${data.company}` : ''}</div>
-      ${data.email ? `<div style="margin-bottom:8px;"><a href="mailto:${data.email}" style="color:#3B82F6;text-decoration:none;font-weight:600;">${data.email}</a></div>` : ''}
+      <div style="font-size:14px;">${data.title} ${data.company ? `<strong style="color:#3B82F6">@ ${data.company}</strong>` : ''}</div>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding-top:10px;">
+      ${data.email ? `<div style="margin-bottom:4px;"><a href="mailto:${data.email}" style="color:#3B82F6;text-decoration:none;font-weight:bold;">${data.email}</a></div>` : ''}
       <div style="font-size:12px;margin-bottom:8px;">
         
     ${data.phone ? `<span style="color:#3B82F6">${icon(phoneSVG, 'tel:'+data.phone, '#3B82F6')}</span> ${data.phone}<br/>` : ''}
@@ -24,7 +29,6 @@ export default function Template44(data) {
   
       </div>
     </td>
-    ${data.photo ? `<td style="padding-left:15px;border-left:3px dotted #3B82F6;"><img src="${data.photo}" width="90" style="border-radius:50%;display:block;"/></td>` : ""}
   </tr>
 </table>`;
 }

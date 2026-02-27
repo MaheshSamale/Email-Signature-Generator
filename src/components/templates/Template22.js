@@ -3,12 +3,17 @@ import { icon, socialIcons, internetSVG, phoneSVG, locationSVG } from "./icons";
 export default function Template22(data) {
   return `
 
-<table cellpadding="0" cellspacing="0" style="font-family:Helvetica, sans-serif;font-size:14px;color:#333;">
+<table cellpadding="0" cellspacing="0" style="font-family:Tahoma, sans-serif;font-size:14px;color:#333;text-align:center;">
   <tr>
-    <td style="padding-right:15px;text-align:right;">
+    <td style="padding-bottom:15px;border-bottom:2px dashed #F59E0B;">
+      ${data.photo ? `<img src="${data.photo}" width="80" style="border-radius:0;display:block;margin:0 auto 10px;"/>` : ""}
       <div style="font-size:18px;font-weight:bold;color:#F59E0B;">${data.name}</div>
-      <div style="font-size:14px;margin-bottom:8px;">${data.title} ${data.company ? `<br/>${data.company}` : ''}</div>
-      ${data.email ? `<div style="margin-bottom:8px;"><a href="mailto:${data.email}" style="color:#F59E0B;text-decoration:none;font-weight:600;">${data.email}</a></div>` : ''}
+      <div style="font-size:14px;">${data.title} ${data.company ? `<strong style="color:#F59E0B">@ ${data.company}</strong>` : ''}</div>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding-top:10px;">
+      ${data.email ? `<div style="margin-bottom:4px;"><a href="mailto:${data.email}" style="color:#F59E0B;text-decoration:none;font-weight:bold;">${data.email}</a></div>` : ''}
       <div style="font-size:12px;margin-bottom:8px;">
         
     ${data.phone ? `<span style="color:#F59E0B">${icon(phoneSVG, 'tel:'+data.phone, '#F59E0B')}</span> ${data.phone}<br/>` : ''}
@@ -24,7 +29,6 @@ export default function Template22(data) {
   
       </div>
     </td>
-    ${data.photo ? `<td style="padding-left:15px;border-left:2px dashed #F59E0B;"><img src="${data.photo}" width="90" style="border-radius:0;display:block;"/></td>` : ""}
   </tr>
 </table>`;
 }

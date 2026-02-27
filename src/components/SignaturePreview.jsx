@@ -9,7 +9,13 @@ export default function SignaturePreview({ data, template, setTemplate }) {
   const html = currentTemplate(data);
 
   const copySignature = async () => {
-    const blob = new Blob([html], { type: "text/html" });
+    // Minify HTML to reduce signature size
+    const minifiedHtml = html
+      .replace(/>\s+</g, '><') // Remove whitespace between tags
+      .replace(/\s{2,}/g, ' ') // Collapse multiple spaces
+      .trim();
+
+    const blob = new Blob([minifiedHtml], { type: "text/html" });
     const item = new ClipboardItem({ "text/html": blob });
     await navigator.clipboard.write([item]);
     

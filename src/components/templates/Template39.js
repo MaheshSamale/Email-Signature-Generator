@@ -3,7 +3,7 @@ import { icon, socialIcons, internetSVG, phoneSVG, locationSVG } from "./icons";
 export default function Template39(data) {
   return `
 
-<table cellpadding="0" cellspacing="0" width="450" style="font-family:Tahoma, sans-serif;font-size:14px;color:#333;table-layout:fixed;">
+<table cellpadding="0" cellspacing="0" width="450" style="font-family:Georgia, serif;font-size:14px;color:#333;table-layout:fixed;">
   <tr>
     <td width="35%" style="vertical-align:top;padding-right:10px;">
       ${data.photo ? `<img src="${data.photo}" width="100%" style="max-width:120px;border-radius:20px;display:block;margin-bottom:10px;"/>` : ""}

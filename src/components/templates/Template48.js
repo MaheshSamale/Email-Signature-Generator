@@ -3,21 +3,20 @@ import { icon, socialIcons, internetSVG, phoneSVG, locationSVG } from "./icons";
 export default function Template48(data) {
   return `
 
-<table cellpadding="0" cellspacing="0" style="font-family:Georgia, serif;font-size:14px;color:#333;border:1px solid #0F172A;padding:15px;border-radius:50%;">
+<table cellpadding="0" cellspacing="0" style="font-family:Arial, sans-serif;font-size:12px;color:#222;table-layout:fixed;">
   <tr>
-    ${data.photo ? `<td style="padding-right:15px;"><img src="${data.photo}" width="75" style="border-radius:50%;display:block;"/></td>` : ""}
-    <td>
-      <div style="font-size:18px;font-weight:bold;color:#0F172A;">${data.name}</div>
-      <div style="font-size:14px;margin-bottom:10px;border-bottom:1px solid #ccc;padding-bottom:5px;">${data.title} ${data.company ? `| <span style="font-style:italic">${data.company}</span>` : ''}</div>
-      ${data.email ? `<div style="margin-bottom:4px;"><a href="mailto:${data.email}" style="color:#0F172A;text-decoration:none;font-weight:600;">${data.email}</a></div>` : ''}
-      <div style="font-size:12px;margin-bottom:8px;">
-        
-    ${data.phone ? `<span style="color:#0F172A">${icon(phoneSVG, 'tel:'+data.phone, '#0F172A')}</span> ${data.phone}<br/>` : ''}
-    ${data.website ? `<span style="color:#0F172A">${icon(internetSVG, data.website, '#0F172A')}</span> <a href="${data.website}" style="color:#0F172A;text-decoration:none;">${data.website}</a><br/>` : ''}
-    ${data.address ? `<span style="color:#0F172A">${icon(locationSVG, 'https://maps.google.com/?q='+data.address, '#0F172A')}</span> ${data.address}<br/>` : ''}
-  
-      </div>
-      <div>
+    ${data.photo ? `<td style="padding-right:10px;"><img src="${data.photo}" width="50" style="border-radius:50%;display:block;"/></td>` : ""}
+    <td style="border-right:1px solid #ddd;padding-right:10px;">
+      <div style="font-size:15px;font-weight:bold;color:#0F172A;">${data.name}</div>
+      <div>${data.title}</div>
+      ${data.company ? `<div>${data.company}</div>` : ''}
+    </td>
+    <td style="padding-left:10px;line-height:1.4;">
+      ${data.email ? `<div>E: <a href="mailto:${data.email}" style="color:#0F172A;text-decoration:none;">${data.email}</a></div>` : ''}
+      ${data.phone ? `<div>P: ${data.phone}</div>` : ''}
+      ${data.website ? `<div>W: <a href="${data.website}" style="color:#0F172A;text-decoration:none;">${data.website}</a></div>` : ''}
+      ${data.address ? `<div>L: ${data.address}</div>` : ''}
+      <div style="margin-top:4px;">
         
     ${data.socials && data.socials.length > 0 ? 
       data.socials.map(s => s.url && socialIcons[s.platform] ? icon(socialIcons[s.platform], s.url, '#0F172A') : '').join('') 

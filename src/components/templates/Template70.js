@@ -1,15 +1,15 @@
 import { icon, socialIcons, internetSVG, phoneSVG, locationSVG } from "./icons";
 
-export default function Template10(data) {
+export default function Template70(data) {
   return `
 
-<table cellpadding="0" cellspacing="0" style="font-family:Tahoma, sans-serif;font-size:14px;color:#333;border:2px dashed #4F46E5;padding:15px;border-radius:0;">
+<table cellpadding="0" cellspacing="0" style="font-family:Tahoma, sans-serif;font-size:14px;color:#333;">
   <tr>
-    ${data.photo ? `<td style="padding-right:15px;"><img src="${data.photo}" width="75" style="border-radius:50%;display:block;"/></td>` : ""}
-    <td>
+    ${data.photo ? `<td style="padding-right:15px;border-right:2px dashed #4F46E5;"><img src="${data.photo}" width="90" style="border-radius:0;display:block;"/></td>` : ""}
+    <td style="padding-left:15px;">
       <div style="font-size:18px;font-weight:bold;color:#4F46E5;">${data.name}</div>
-      <div style="font-size:14px;margin-bottom:10px;border-bottom:1px solid #ccc;padding-bottom:5px;">${data.title} ${data.company ? `| <span style="font-style:italic">${data.company}</span>` : ''}</div>
-      ${data.email ? `<div style="margin-bottom:4px;"><a href="mailto:${data.email}" style="color:#4F46E5;text-decoration:none;font-weight:600;">${data.email}</a></div>` : ''}
+      <div style="font-size:14px;margin-bottom:8px;">${data.title} ${data.company ? `| <span style="font-weight:600">${data.company}</span>` : ''}</div>
+      ${data.email ? `<div style="margin-bottom:8px;"><a href="mailto:${data.email}" style="color:#4F46E5;text-decoration:none;font-weight:500">${data.email}</a></div>` : ''}
       <div style="font-size:12px;margin-bottom:8px;">
         
     ${data.phone ? `<span style="color:#4F46E5">${icon(phoneSVG, 'tel:'+data.phone, '#4F46E5')}</span> ${data.phone}<br/>` : ''}
