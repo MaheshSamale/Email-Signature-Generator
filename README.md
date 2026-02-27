@@ -1,16 +1,49 @@
-# React + Vite
+# 📧 MailMark Studio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, professional email signature generator that empowers you to create stunning, personalized email signatures in minutes. Designed with simplicity and elegance in mind, MailMark Studio is your go-to tool for making a lasting impression with every email.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **🎨 Drag-and-Drop Editor** - Intuitive interface for easy signature customization
+- **📷 Smart Image Uploader** - Upload and crop your logo or profile picture perfectly
+- **🎯 Real-time Preview** - See live changes as you design your signature
+- **🎨 Advanced Customization**
+  - Multiple font styles and sizes
+  - Full color picker for text and backgrounds
+  - Adjustable spacing and alignment
+  - Social media links integration
+- **📱 Responsive Design** - Works perfectly on desktop and mobile devices
+- **💾 Easy Export Options**
+  - Copy to clipboard (one-click)
+  - Download as HTML
+  - Ready for Gmail, Outlook, Apple Mail, and more
+- **🚀 No Installation Required** - Runs entirely in your browser
+- **⚡ Lightning-Fast Performance** - Built with Vite for optimal speed
+- **🔒 Privacy First** - All processing happens locally in your browser
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Visit the app now: **[MailMark Studio](https://mailmarkstudio.vercel.app/)**
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Technology | Version | Purpose |
+|-----------|---------|---------|
+| React | 19.2.0 | UI Framework |
+| Vite | 7.3.1 | Build Tool & Dev Server |
+| react-easy-crop | 5.5.6 | Image Cropping |
+| ESLint | 9.39.1 | Code Quality |
+| Vercel | - | Deployment |
+
+## 📋 Prerequisites
+
+- **Node.js** v14 or higher
+- **npm** or **yarn** package manager
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+
+## 🔧 Installation & Setup
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/MaheshSamale/Email-Signature-Generator.git
+cd Email-Signature-Generator
