@@ -35,6 +35,15 @@ Visit the app now: **[MailMark Studio](https://mailmarkstudio.vercel.app/)**
 | ESLint | 9.39.1 | Code Quality |
 | Vercel | - | Deployment |
 
+##Demo
+<img width="1440" height="900" alt="Screenshot 2026-02-27 at 12 11 05 PM" src="https://github.com/user-attachments/assets/0183cd58-4c88-467c-925b-eaca4cb9d2e6" />
+<img width="1440" height="900" alt="Screenshot 2026-02-27 at 12 11 24 PM" src="https://github.com/user-attachments/assets/dc357477-9c7e-4926-a774-c089919ec779" />
+<img width="1440" height="900" alt="Screenshot 2026-02-27 at 12 11 32 PM" src="https://github.com/user-attachments/assets/15596c2e-b960-4b9b-abae-0a490ad8395f" />
+<img width="1440" height="900" alt="Screenshot 2026-02-27 at 12 11 39 PM" src="https://github.com/user-attachments/assets/c1728326-6135-4566-b27c-312645ebc91e" />
+<img width="1440" height="900" alt="Screenshot 2026-02-27 at 12 11 48 PM" src="https://github.com/user-attachments/assets/6233744b-04e6-4e7b-9806-6ef17dde5a2c" />
+
+
+
 ## 📋 Prerequisites
 
 - **Node.js** v14 or higher
