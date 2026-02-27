@@ -1,58 +1,55 @@
-# 📧 MailMark Studio
+# Email Signature Generator
 
-A modern, professional email signature generator that empowers you to create stunning, personalized email signatures in minutes. Designed with simplicity and elegance in mind, MailMark Studio is your go-to tool for making a lasting impression with every email.
+## Overview
+The Email Signature Generator is a simple tool designed to help users create professional email signatures quickly and easily. 
 
-## ✨ Features
+## Features
+- **Easy to use**: Generate an email signature without any technical skills.
+- **Customizable templates**: Choose from multiple pre-designed templates.
+- **Preview your signature**: See real-time previews as you customize your signature.
+- **Download options**: Save your signature in various formats (HTML, PNG, etc.).
 
-- **🎨 Drag-and-Drop Editor** - Intuitive interface for easy signature customization
-- **📷 Smart Image Uploader** - Upload and crop your logo or profile picture perfectly
-- **🎯 Real-time Preview** - See live changes as you design your signature
-- **🎨 Advanced Customization**
-  - Multiple font styles and sizes
-  - Full color picker for text and backgrounds
-  - Adjustable spacing and alignment
-  - Social media links integration
-- **📱 Responsive Design** - Works perfectly on desktop and mobile devices
-- **💾 Easy Export Options**
-  - Copy to clipboard (one-click)
-  - Download as HTML
-  - Ready for Gmail, Outlook, Apple Mail, and more
-- **🚀 No Installation Required** - Runs entirely in your browser
-- **⚡ Lightning-Fast Performance** - Built with Vite for optimal speed
-- **🔒 Privacy First** - All processing happens locally in your browser
+## Getting Started
 
-## 🚀 Live Demo
+### Prerequisites
+Before you begin, ensure you have met the following requirements:
+- A modern web browser (Chrome, Firefox, Safari, etc.).
+- Internet access for downloading signatures.
 
-Visit the app now: **[MailMark Studio](https://mailmarkstudio.vercel.app/)**
+### Installation
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/MaheshSamale/Email-Signature-Generator.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Email-Signature-Generator
+   ```
 
-## 🛠️ Tech Stack
+## Usage
+1. Open the `index.html` file in your web browser.
+2. Follow the on-screen instructions to customize your email signature.
+3. After finalizing your design, download the signature using the provided options.
 
-| Technology | Version | Purpose |
-|-----------|---------|---------|
-| React | 19.2.0 | UI Framework |
-| Vite | 7.3.1 | Build Tool & Dev Server |
-| react-easy-crop | 5.5.6 | Image Cropping |
-| ESLint | 9.39.1 | Code Quality |
-| Vercel | - | Deployment |
+## Contributions
+We welcome contributions! To contribute, please follow these steps:
+1. Fork the project.
+2. Create your feature branch:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m 'Add some feature'
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. Open a pull request.
 
-##Demo
-<img width="1440" height="900" alt="Screenshot 2026-02-27 at 12 11 05 PM" src="https://github.com/user-attachments/assets/0183cd58-4c88-467c-925b-eaca4cb9d2e6" />
-<img width="1440" height="900" alt="Screenshot 2026-02-27 at 12 11 24 PM" src="https://github.com/user-attachments/assets/dc357477-9c7e-4926-a774-c089919ec779" />
-<img width="1440" height="900" alt="Screenshot 2026-02-27 at 12 11 32 PM" src="https://github.com/user-attachments/assets/15596c2e-b960-4b9b-abae-0a490ad8395f" />
-<img width="1440" height="900" alt="Screenshot 2026-02-27 at 12 11 39 PM" src="https://github.com/user-attachments/assets/c1728326-6135-4566-b27c-312645ebc91e" />
-<img width="1440" height="900" alt="Screenshot 2026-02-27 at 12 11 48 PM" src="https://github.com/user-attachments/assets/6233744b-04e6-4e7b-9806-6ef17dde5a2c" />
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-
-
-## 📋 Prerequisites
-
-- **Node.js** v14 or higher
-- **npm** or **yarn** package manager
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-
-## 🔧 Installation & Setup
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/MaheshSamale/Email-Signature-Generator.git
-cd Email-Signature-Generator
+## Contact
+For inquiries, please reach out to [yourname@example.com](mailto:yourname@example.com).
